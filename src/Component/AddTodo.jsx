@@ -1,6 +1,6 @@
 import React from "react";
 
-function AddTodo({ setTodos }) {
+function AddTodo({ todos,setTodos }) {
   const [formValue, setFormValue] = React.useState("");
 
 
@@ -16,7 +16,12 @@ function AddTodo({ setTodos }) {
   }
   //Method To Handle Delete All Todos Functionality
     function handleDeleteAllTodos(){
-      setTodos([]);
+      if(todos.length>0){
+        setTodos([])
+      }else{
+        alert("Sorry No Tasks To Delete")
+      }
+
     }
 
   return (
