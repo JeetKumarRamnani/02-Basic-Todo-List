@@ -8,7 +8,7 @@ function App() {
   //     .then((res) => res.json())
   //     .then((data) => console.log(data));
   // }, []);
-  const [todos, setTodos] = useState(["Jeet"]);
+  const [todos, setTodos] = useState([""]);
   return (
     <div className="Main-Container flex flex-col items-center justify-center ">
       <h1 className="font-semibold text-4xl mb-10">React Todo Application</h1>
